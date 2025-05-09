@@ -12,3 +12,5 @@ if (soma %2==0) {
 else {
     console.log('a soma dos números é ímpar.');
 }
+
+// jerry eh lindo

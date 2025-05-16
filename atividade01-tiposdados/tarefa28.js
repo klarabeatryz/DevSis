@@ -7,7 +7,7 @@ if (opcao === 1) {
 } 
 else if (opcao === 2) {
   let media = (n1 * p1 + n2 * p2) / (p1 + p2);
-console.log(media >= 60 ?  }`Aprovado! Média ponderada: ${media}` : media >= 40 ? `Recuperação! Média ponderada: ${media}` : `Reprovado! Média ponderada: ${media}`);
+  console.log (media >= 60 ? `Aprovado! Média ponderada: ${media}` : (media >= 40) ? `Recuperação! Média ponderada: ${media}` : `Reprovado! Média ponderada: ${media}`);
 } 
 else if (opcao === 3) {
   console.log("Saindo...");

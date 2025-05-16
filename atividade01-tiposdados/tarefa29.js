@@ -1,4 +1,4 @@
-let codigo = 1;
+let codigo = 2;
 let quantidade = 4;
 let precoCompra, aumento, nomeProduto;
 

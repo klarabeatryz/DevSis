@@ -3,7 +3,7 @@ function calcularFolhaPagamento() {
     let horasTrabalhadas = 160;
     let salarioBruto = valorHora * horasTrabalhadas;
 
-    let ir = `salarioBruto <= 1000 ? 0 : salarioBruto <= 1200 ? salarioBruto * 0.05 : salarioBruto <= 2300 ? salarioBruto * 0.10 : salarioBruto * 0.20`;
+    let ir = salarioBruto <= 1000 ? 0 : salarioBruto <= 1200 ? salarioBruto * 0.05 : salarioBruto <= 2300 ? salarioBruto * 0.10 : salarioBruto * 0.20;
 
     let inss = salarioBruto * 0.10;
     let sindicato = salarioBruto * 0.03;
@@ -19,3 +19,6 @@ function calcularFolhaPagamento() {
     console.log(`FGTS: R$ ${fgts}`);
     console.log(`Total de Descontos: R$ ${totalDescontos}`);
     console.log(`Salário Líquido: R$ ${salarioLiquido}`);
+
+    calcularFolhaPagamento();
+}

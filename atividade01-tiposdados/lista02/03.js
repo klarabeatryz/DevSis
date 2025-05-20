@@ -1,9 +1,6 @@
-function ehPar(n){
-    return (n);
+function ehPar(numero){
+    return numero %2==0;
+    
 }
-if (n %2==0){
-    console.log('true.')
-}
-else {
-    console.log('false.');
-}
+console.log(ehPar (9)); // true
+console.log(ehPar (9)); // false

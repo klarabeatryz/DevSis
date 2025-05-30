@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <script>
+    let cont = 0;  
+    let maiorPalavra = '';  
+    let menorPalavra = '';  
+    let palavra = '';  
+    
+    while (true) { 
+        palavra = prompt("Digite algo: ");
+        
+        if (palavra === '') {
+            break; 
+        }
+        
+        if (maiorPalavra === '' || palavra.length > maiorPalavra.length) {
+            maiorPalavra = palavra;
+        }
+      
+        if (menorPalavra === '' || palavra.length < menorPalavra.length) {
+            menorPalavra = palavra;
+        }
+    }
+
+    document.writeln(`<h2>Palavra com mais caracteres: ${maiorPalavra}</h2>`);
+    document.writeln(`<h2>Palavra com menos caracteres: ${menorPalavra}</h2>`);
+</script>
+</body>
+</html>

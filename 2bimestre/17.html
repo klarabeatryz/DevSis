@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <title>ler, calcular e exibir</title>
+</head>
+<body>
+    <script>
+
+
+      for (let i = 1; i <= 10; i++) {
+        const nota1 = parseFloat(document.querySelector(`input[name=nota1_${i}]`).value);
+        const nota2 = parseFloat(document.querySelector(`input[name=nota2_${i}]`).value);
+
+        const media = ((nota1 + nota2) / 2);
+        const p = document.createElement('p');
+        p.textContent = `Aluno ${i}: Média = ${media}`;
+        resultadosDiv.appendChild(p);
+      }
+  </script>
+</body>
+</html>

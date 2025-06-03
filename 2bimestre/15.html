@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Média dos Números Divisíveis por 3</title>
+</head>
+<body>
+    <script>
+        let soma = 0;
+        let contador = 0;
+        
+        while(true) {
+            let numero = Number(prompt("Digite um número: "));
+            
+            if (numero < 0) {
+                break;
+            }
+            
+            if (numero % 3 === 0) {
+                soma += numero;
+                contador++;
+            }
+        }
+        
+        let media = contador > 0 ? soma / contador : 0;
+        document.writeln(`Média dos números divisíveis por 3: ${media}`);
+    </script>
+</body>
+</html>

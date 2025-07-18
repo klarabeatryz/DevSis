@@ -4,6 +4,14 @@ let nomes = ['ana', 'bruno', 'carlos', 'diana', 'eduardo'];
 //02) depois, remova o nome 'ana' do array. splice()
 
 //03) mostrar array final
-if(nomes.indexOf('carlos')){
-console.log(includes(caio));
+
+let indiceCarlos = nomes.indexOf('carlos');
+if (indiceCarlos != -1){
+    nomes[indiceCarlos] = 'caio'
 }
+let indiceAna = nomes.indexOf('ana')
+if (indiceAna != -1){
+    nomes.splice(indiceAna, 1);
+}
+console.log(nomes);
+console.log(nomes.length);

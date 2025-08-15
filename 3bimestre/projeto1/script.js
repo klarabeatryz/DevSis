@@ -22,4 +22,11 @@ function adicionarNumero(){
     console.log(array);
     exibirArray.innerHTML = `Array: ${array} <br/> Tamanho do array ${array.length}`;
     
-}
+    }
+    let (indexN == -1) 
+    if (indexN == -1){
+        alert("o número não está no array");
+        return;
+    }
+    array.splice(indexN, 1);input.value = '';
+    console.log(array);
